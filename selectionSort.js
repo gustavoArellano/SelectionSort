@@ -6,20 +6,16 @@ O(n^2)
 */
 
 
-array =[42,23,4,16,8,15]
+array =[11, 19, 1989, 1991, 5, 8]
 
 function selectionSort(arr){
-    //goes through the entire array length
     for(var i = 0; i<arr.length-1; i++){
-        //setting min index at the first index of each loop, which will be swap for the smallest number in the length of the array
-        //Once this loop complete, the minimum number will be at the front, i will increase, thus the new i will be swapped for the next lowest number
         var min = i
         for(var j = i; j<arr.length; j++){
             if(arr[j]<arr[min]){
                 min = j
             }
         }
-        //the swap happens after the minimum number is found in the inner loop, which only exists to find the index of the smaller number
         var temp = arr[i]
         arr[i] = arr[min]
         arr[min] = temp
