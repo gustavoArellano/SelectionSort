@@ -1,10 +1,5 @@
-/*
-Selection sort goes through the array to find the minimum number, and once it finds the minimum, it will swap the minimum to the front of the array.  
-The algorithm will go through the array and continue to find the next minimum number and bring it to the front till it goes through the array's length
-This Algorithm does less swapping than bubble Sort
-O(n^2)
-*/
-
+//Selection Sort
+//Runs through the array until it finds the minimum number, once found, it will swap the minimum number to the front of the array. It will continue to run through the entire array until sorted. This algorith does less swapping than the Bubble Sort method
 
 array =[11, 19, 1989, 1991, 5, 8]
 
